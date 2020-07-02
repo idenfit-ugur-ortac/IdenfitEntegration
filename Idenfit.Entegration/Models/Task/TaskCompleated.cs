@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Idenfit.Entegration.Models.Task
 {
-    public class TaskCompleated
+    public class TaskCompleted
     {
         private string customer { get; set; }
 

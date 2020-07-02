@@ -30,14 +30,14 @@ namespace Idenfit.Entegration.Controllers
             };
         }
 
-        [HttpPost("TaskCompleated")]
-        public ClientResult Post([FromBody] TaskCompleated signal)
+        [HttpPost("TaskCompleted")]
+        public ClientResult Post([FromBody] TaskCompleted signal)
         {
             return new ClientResult
             {
                 State = true,
 
-                Message = $"Signal TaskCompleated"
+                Message = $"Signal TaskCompleted"
             };
         }
 
