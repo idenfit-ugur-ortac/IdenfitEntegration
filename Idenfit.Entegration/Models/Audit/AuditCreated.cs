@@ -5,68 +5,64 @@ namespace Idenfit.Entegration.Models.Audit
 {
     public class AuditCreated
     {
-        private string customer { get; set; }
+        public string customer { get; set; }
 
-        private string reporter { get; set; }
+        public string reporter { get; set; }
 
-        private bool isContinuous { get; set; }
+        public bool isContinuous { get; set; }
 
-        private bool needChecked { get; set; }
+        public bool needChecked { get; set; }
 
-        private int repeatCount { get; set; }
+        public int repeatCount { get; set; }
 
-        private string place { get; set; }
+        public string place { get; set; }
 
-        private string group { get; set; }
+        public string group { get; set; }
 
-        private string lastState { get; set; }
+        public string lastState { get; set; }
 
-        private string incidentAudit { get; set; }
+        public string incidentAudit { get; set; }
 
-        private string assignedEmployee { get; set; }
+        public string assignedEmployee { get; set; }
 
-        private string assignedTeam { get; set; }
+        public string assignedTeam { get; set; }
 
-        private string tag { get; set; }
+        public string tag { get; set; }
 
-        private string questionForm { get; set; }
+        public string questionForm { get; set; }
 
-        private string serviceRecipient { get; set; }
+        public string serviceRecipient { get; set; }
 
-        private string checkedEmployee { get; set; }
+        public string checkedEmployee { get; set; }
 
-        private DateTime estStartDate { get; set; }
+        public DateTime? estStartDate { get; set; }
 
-        private DateTime estFinishDate { get; set; }
+        public DateTime? estFinishDate { get; set; }
 
-        private DateTime estStartTime { get; set; }
+        public DateTime? estStartTime { get; set; }
 
-        private DateTime estFinishTime { get; set; }
+        public DateTime? estFinishTime { get; set; }
 
-        private long estDuration { get; set; }
+        public long? estDuration { get; set; }
 
-        private DateTime startTime { get; set; }
+        public List<string> titles { get; set; }
 
-        private DateTime finishTime { get; set; }
+        public List<string> branches { get; set; }
 
-        private long duration { get; set; }
+        public List<string> fixtures { get; set; }
 
-        private List<string> titles { get; set; }
+        public List<string> dependencies { get; set; }
 
-        private List<string> branches { get; set; }
+        public List<string> attachments { get; set; }
 
-        private List<string> fixtures { get; set; }
+        public string description { get; set; }
 
-        private List<string> dependencies { get; set; }
+        public string color { get; set; }
 
-        private List<string> attachments { get; set; }
+        public int? scoreType { get; set; }
 
-        private List<string> questions { get; set; }
+        public string type { get; set; }
 
-        private string description { get; set; }
-
-        private string color { get; set; }
-
-        private string failDescription { get; set; }
+        public string priority { get; set; }
     }
 }

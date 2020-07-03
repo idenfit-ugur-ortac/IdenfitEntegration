@@ -63,6 +63,8 @@ namespace Idenfit.Entegration.Models.Audit
 
         public List<string> attachments { get; set; }
 
+        public List<string> personnel { get; set; }
+
         public List<AuditQuestion> questions { get; set; }
 
         public string description { get; set; }
