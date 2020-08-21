@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Idenfit.Entegration.Models.Audit
 {
     public class AuditCompleted
     {
-        public string customer { get; set; }
+        public Model customer { get; set; }
 
-        public string reporter { get; set; }
+        public string reportLink { get; set; }
+
+        public Model reporter { get; set; }
 
         public bool isContinuous { get; set; }
 
@@ -17,25 +17,25 @@ namespace Idenfit.Entegration.Models.Audit
 
         public int repeatCount { get; set; }
 
-        public string place { get; set; }
+        public Model place { get; set; }
 
-        public string group { get; set; }
+        public Model group { get; set; }
 
         public string lastState { get; set; }
 
-        public string incidentAudit { get; set; }
+        public Model incidentAudit { get; set; }
 
-        public string assignedEmployee { get; set; }
+        public Model assignedEmployee { get; set; }
 
-        public string assignedTeam { get; set; }
+        public Model assignedTeam { get; set; }
 
-        public string tag { get; set; }
+        public Model tag { get; set; }
 
-        public string questionForm { get; set; }
+        public Model questionForm { get; set; }
 
-        public string serviceRecipient { get; set; }
+        public Model serviceRecipient { get; set; }
 
-        public string checkedEmployee { get; set; }
+        public Model checkedEmployee { get; set; }
 
         public DateTime? estStartDate { get; set; }
 
@@ -53,17 +53,17 @@ namespace Idenfit.Entegration.Models.Audit
 
         public long? duration { get; set; }
 
-        public List<string> titles { get; set; }
+        public List<Model> titles { get; set; }
 
-        public List<string> branches { get; set; }
+        public List<Model> branches { get; set; }
 
-        public List<string> fixtures { get; set; }
+        public List<Model> fixtures { get; set; }
 
-        public List<string> dependencies { get; set; }
+        public List<Model> dependencies { get; set; }
 
-        public List<string> attachments { get; set; }
+        public List<Model> attachments { get; set; }
 
-        public List<string> personnel { get; set; }
+        public List<Model> personnel { get; set; }
 
         public List<AuditQuestion> questions { get; set; }
 
